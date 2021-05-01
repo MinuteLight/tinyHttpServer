@@ -33,7 +33,7 @@ Linux下C++轻量级Web服务器，助力初学者快速实践网络编程，搭
     )ENGINE=InnoDB;
 
     // 添加数据
-    INSERT INTO user(username, passwd) VALUES('name', 'passwd');
+    INSERT INTO user(username, passwd) VALUES('haha', 'haha');
     ```
 
 * 修改main.c中的数据库初始化信息
@@ -41,14 +41,14 @@ Linux下C++轻量级Web服务器，助力初学者快速实践网络编程，搭
     ```C++
     // root root修改为服务器数据库的登录名和密码
 	// qgydb修改为上述创建的yourdb库名
-    connPool->init("localhost", "root", "root", "yourdb", 3306, 8);
+    connPool->init("localhost", "root", "root", "mydb", 3306, 8);
     ```
 
 * 修改http_conn.cpp中的root路径
 
     ```C++
 	// 修改为root文件夹所在路径
-    const char* doc_root="/home/qgy/TinyWebServer/root";
+    const char* doc_root="/home/byj/TinyWebServer/root";
     ```
 
 * 生成server
